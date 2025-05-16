@@ -1,6 +1,3 @@
-Claro, aquí tienes un README para el frontend en Angular, siguiendo el estilo y estructura del README del backend que me diste, e incluyendo que usas Signals, Input, Output, HttpClient y RxJS:
-
----
 
 # 🚀 Frontend de Gestión de Productos - Prueba Técnica
 
