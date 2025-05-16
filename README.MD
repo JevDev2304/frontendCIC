@@ -13,12 +13,12 @@ Aplicación frontend desarrollada en Angular para consumir y gestionar productos
 
 ## 🔧 Tecnologías Principales
 
-* **Angular 19** (o la versión que uses)
+* **Angular 19** 
 * **TypeScript**
 * **RxJS** para programación reactiva
 * **HttpClient** para comunicación HTTP
 * **Angular Signals** para estado reactivo
-* **Tailwind CSS** (opcional, si usas otro estilo cambiar)
+* **Tailwind CSS**
 * **Angular CLI** para desarrollo y despliegue
 
 ## ⚙️ Configuración
@@ -40,7 +40,6 @@ git clone https://github.com/JevDev2304/frontendCIC.git
 2. Instalar dependencias:
 
 ```bash
-cd frontendCIC
 npm install
 ```
 
