@@ -1,0 +1,20 @@
+<div class="group rounded-lg bg-white shadow-md flex flex-col justify-between h-[480px]">
+    <a  class="w-full overflow-hidden rounded-t-lg bg-white">
+      <img
+        [src]="product.image"
+        [alt]="product.title"
+        class="h-[280px] w-full object-contain object-center group-hover:opacity-75 rounded-2xl" 
+      />
+    </a>
+  
+    <div class="flex flex-col space-y-2 p-4 flex-1 bg-gray-100">
+      <h3 class="text-sm text-gray-700 line-clamp-2">{{ product.title }}</h3>
+      <p class="text-lg font-medium text-gray-900">$ {{ product.price }}</p>
+    </div>
+  
+    <div class="flex gap-4 p-4 justify-center bg-gray-100">
+      <button (click)="onUpdate($event)" class="bg-orange-400 text-white px-3 py-2 rounded-2xl">Editar Producto</button>
+      <button (click)="onDelete($event)" class="bg-red-400 text-white px-3 py-2 rounded-2xl">Eliminar Producto</button>
+    </div>
+  </div>
+  

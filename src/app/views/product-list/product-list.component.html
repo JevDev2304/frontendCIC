@@ -1,0 +1,16 @@
+<!-- Crear Producto -->
+<button
+  (click)="openCreateModal()"
+  class="fixed bottom-6 right-6 bg-blue-600 text-white px-5 py-2 rounded-2xl shadow-lg hover:bg-blue-700 transition text-lg"
+>
+  Crear Producto
+</button>
+<button
+  class="fixed bottom-20 right-6 bg-green-600 text-white px-5 py-2 rounded-2xl shadow-lg hover:bg-green-700 transition text-lg"
+  (click)="syncProducts()"
+>
+  Sincronizar
+</button>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-8 gap-4 md:gap-8 bg-[#F5F5F5] min-h-screen">
+    <app-product *ngFor="let product of products()" [product]="product" (edit)="openEditModal($event)" (delete)="openDeleteModal($event)" (click)="viewProductDetail(product.id)"/>
+</div>

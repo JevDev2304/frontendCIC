@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Node modules
+/node_modules/
+
+# Angular build output
+/dist/
+/out-tsc/
+
+# Compiled output
+/tmp/
+*.js
+*.js.map
+*.tsbuildinfo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+/src/environments/environment*.ts
+
+# MacOS files
+.DS_Store
+
+# Angular specific
+.angular/cache/
+
+# Coverage reports
+/coverage/
+
+# Misc
+/.angular/
+
+# Optional npm cache
+.npm
+
+# Temporary folders
+/.sass-cache/
+
+# Others
+*.log

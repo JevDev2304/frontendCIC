@@ -1,0 +1,23 @@
+<form class="flex flex-col p-8 gap-4 bg-[#F5F5F5]">
+  <h2 class="text-black text-2xl">Actualizar Producto</h2>
+
+  <label for="title">Título:</label>
+  <input class="border rounded border-gray-300 p-1" id="title" [(ngModel)]="product.title" name="title" />
+
+  <label for="price">Precio:</label>
+  <input class="border rounded border-gray-300 p-1" id="price" type="number" [(ngModel)]="product.price" name="price" />
+
+  <label for="image">URL de imagen:</label>
+  <input class="border rounded border-gray-300 p-1" id="image" [(ngModel)]="product.image" name="image" />
+
+  <label for="description">Descripción:</label>
+  <textarea class="border rounded border-gray-300 p-1" id="description" [(ngModel)]="product.description" name="description"></textarea>
+
+  <label for="category">Categoría:</label>
+  <input class="border rounded border-gray-300 p-1" id="category" [(ngModel)]="product.category" name="category" />
+
+  <div class="flex flex-col gap-4">
+      <button class="bg-orange-400 text-white p-2" type="button" (click)="update()">Guardar</button>
+      <button class="bg-white text-orange-400 p-2" type="button" (click)="cancel()">Cancelar</button>
+  </div>
+</form>
